@@ -1,0 +1,15 @@
+{
+  "name": "linkedin-connection-automation",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "LinkedIn profile UI verification automation template (dry-run only).",
+  "scripts": {
+    "start": "node src/executor.js",
+    "verify:profiles": "node scripts/connectProfiles.js",
+    "verify:messaging-ui": "node scripts/sendMessage.js"
+  },
+  "dependencies": {
+    "playwright": "^1.49.0"
+  }
+}

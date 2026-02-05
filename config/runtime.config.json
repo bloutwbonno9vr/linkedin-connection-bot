@@ -1,0 +1,18 @@
+{
+  "appName": "linkedin-connection-automation",
+  "mode": "dry-run",
+  "headless": true,
+  "slowMoMs": 0,
+  "timeoutMs": 45000,
+  "maxRetries": 2,
+  "minDelayMs": 1200,
+  "maxDelayMs": 3500,
+  "notes": "SAFE template: verifies LinkedIn profile UI elements for QA/testing. It does not send connection requests or messages.",
+  "targetsFile": "profiles/targets.json",
+  "selectors": {
+    "profileTopCard": "main .pv-top-card",
+    "connectButton": "button:has-text('Connect')",
+    "messageButton": "button:has-text('Message')",
+    "moreButton": "button:has-text('More')"
+  }
+}
